@@ -1,8 +1,6 @@
-# from django.shortcuts import render
+from django.shortcuts import render
 
-# Create your views here.
+def hello_world(element):
+    return render (element,'hello.html')
 
-from django.http import HttpResponse
 
-def text(element):
-    return HttpResponse('Hello')
